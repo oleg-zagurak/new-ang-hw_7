@@ -1,0 +1,14 @@
+.header{
+    padding: 20px 40px;
+    background-color: rgb(38, 38, 45);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.648)
+}
+.link{
+    color: rgba(255, 255, 255, 0.534);
+    text-decoration: none;
+    margin-right: 20px;
+}
+.link:hover{
+    color: white;
+}

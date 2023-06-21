@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="blog" *ngFor="let blog of blogs">
+        <div class="image">
+            <img src="./../../../assets/img.jpg" alt="image" class="img">
+        </div>
+        <div class="row author">{{blog.author | uppercase}}</div>
+        <div class="row title">{{blog.title}}</div>
+        <div class="row text">{{blog.text}}</div>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    gap: 20px;
+    flex-grow: 0 1;
+    padding: 15px 20px;
+}
+
+.fake-btn {
+    width: 180px;
+    background-color: rgb(38, 38, 45);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.fake-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: rgb(38, 38, 45);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(61, 61, 69);
+
+}
+
+.edit-btn{
+    background-color: rgb(244, 244, 244);
+    color: black;
+}
+
+.edit-btn:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.main {
+    width: 100%;
+}
+
+.form {
+    border-bottom: 1px solid rgb(237, 236, 236);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.input:focus {
+    outline: none;
+    border-color: rgb(28, 168, 254);
+    box-shadow: 0px 0px 3px 3px rgba(28, 167, 254, 0.499);
+}
+
+.area {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.table {
+    padding: 10px 0;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+tr {
+    border-bottom: 1px solid rgb(237, 236, 236);
+    border-top: 1px solid rgb(237, 236, 236);
+}
+
+th {
+    font-weight: bold;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.count{
+    font-weight: bold;
+}
+
+.id {
+    width: 4%;
+}
+
+.text {
+    width: 22%;
+}
+
+.buttons {
+    width: 15%;
+}

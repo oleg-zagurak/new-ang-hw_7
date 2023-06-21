@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="title">
+        <p class="fake-btn"><a routerLink="/admin/blogs">Blogs</a></p>
+    </div>
+    <div class="main">
+        <div class="form">
+            <input type="text" class="input" placeholder="title here..." [(ngModel)]="title">
+            <textarea type="tex" class="area input" placeholder="text here..." [(ngModel)]="text"></textarea>
+            <input type="text" class="input" placeholder="author here..." [(ngModel)]="author">
+            <button class="btn" *ngIf="!editable" (click)="addBlog()">Add</button>
+            <button class="btn edit-btn" *ngIf="editable" (click)="update()">Save edit</button>
+        </div>
+        <table>
+            <col class="id">
+            <col class="text">
+            <col class="text">
+            <col class="text">
+            <col class="buttons">
+            <col class="buttons">
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Text</th>
+                <th>Author</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr *ngFor="let blog of blogs; let i = index">
+                <td class="count">{{ i + 1 }}</td>
+                <td>{{ blog?.title }}</td>
+                <td>{{blog.text}}</td>
+                <td>{{ blog?.author }}</td>
+                <td><button class="btn" (click)="edit(i)">Edit</button></td>
+                <td><button class="btn" (click)="delete(blog.id)" [disabled]="editable">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
